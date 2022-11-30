@@ -1,0 +1,25 @@
+{
+  "name": "aoc-2022",
+  "version": "1.0.0",
+  "description": "Advent of code 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpcruz/aoc-2022.git"
+  },
+  "keywords": [
+    "aoc",
+    "advent",
+    "christmass",
+    "code"
+  ],
+  "author": "lcruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lpcruz/aoc-2022/issues"
+  },
+  "homepage": "https://github.com/lpcruz/aoc-2022#readme"
+}
