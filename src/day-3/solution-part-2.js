@@ -11,10 +11,8 @@ const chunks = strings.reduce((res, item, idx) => {
     res[chunkIdx].push(item);
     return res;
 }, []);
-
-// again, super dirty and naive
-const grouped = chunks.map(chunk => chunk.map(string => [...string.split('')]));
-const data = grouped.map(group => group.shift().filter(v => group.every(a => a.indexOf(v) !== -1)));
-const commonLetters = data.map(set => [...new Set(set)][0]);
+const grouped = chunks.map(chunk => chunk.map(string => string.split('')));
+const data = grouped.map(group => group.shift().filter(v => group.every(a => a.includes(v))));
+const commonLetters = data.map(set => set[0]);
 const priorities = commonLetters.map(getPriority);
 console.log(sumItems(priorities));
