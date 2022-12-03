@@ -1,6 +1,7 @@
 const fs = require('fs');
 
 const { getPriority } = require('./getPriority');
+const { sumItems } = require('./sumItems');
 
 const strings = fs.readFileSync('input.txt', {encoding: 'utf-8'}).trim().split('\n')
 const divide = list => {
@@ -21,5 +22,4 @@ const commonLetters = data.map(set => {
 
 // get priority and sum them all up
 const priorities = commonLetters.map(getPriority);
-const sum = priorities.reduce((a, b) => a + b, 0);
-console.log(sum);
+console.log(sumItems(priorities));
