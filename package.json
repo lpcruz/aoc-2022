@@ -4,7 +4,7 @@
   "description": "Advent of code 2022",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
