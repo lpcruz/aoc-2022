@@ -3,7 +3,7 @@ const fs = require('fs');
 const { isUnique } = require('./isUnique');
 
 const bufferStream = fs.readFileSync('input.txt', { encoding: 'utf-8' })
-  .replace(/\r/g, "")
+  .replace(/\r/g, '')
   .trim();
 
 const windowLength = 14;
